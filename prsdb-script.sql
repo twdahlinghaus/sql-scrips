@@ -70,8 +70,8 @@ foreign key (VendorId) references Vendors(id)
 
 insert into Products (PartNumber, Name, Price, Unit, VendorId)
 Values
-('900-1', 'Volatility Torque', '10000', '1', (select id from Vendors where code = 'AMAZ')),
-('0001', 'Shifter Knob', '5500', '1', (select id from Vendors where code = 'CHEV'));
+('900-1', 'Volatility Torque', '100', '1', (select id from Vendors where code = 'AMAZ')),
+('0001', 'Shifter Knob', '55', '1', (select id from Vendors where code = 'CHEV'));
 
 create table LineItems (
 Id int not null primary key auto_increment,
